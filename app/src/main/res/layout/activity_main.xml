@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="30sp"
+        android:textColor="@color/purple_700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter 1st Digit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_below="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please give number"
+        android:gravity="center"
+        android:inputType="number"
+        android:autofillHints=""
+        tools:ignore="HardcodedText,TextFields" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_below="@+id/et1"
+        android:text="Enter_2nd_digit :"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_200"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_below="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please give number"
+        android:inputType="number"
+        android:gravity="center"
+        android:autofillHints=""
+        tools:ignore="HardcodedText,LabelFor,TextFields" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_below="@id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATION"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_below="@+id/btn1"
+        android:text="Result is: :"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F44336"
+        tools:ignore="HardcodedText" />
+
+
+
+</RelativeLayout>
